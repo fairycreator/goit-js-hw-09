@@ -24,7 +24,7 @@ function handleSubmit(event) {
     return;
   }
 
-  createPromises(delay, step, amount);
+  generatePromises(delay, step, amount);
 }
 
 function createPromise(position, delay) {
@@ -41,7 +41,7 @@ function createPromise(position, delay) {
   });
 }
 
-function createPromises(initialDelay, step, amount) {
+function generatePromises(initialDelay, step, amount) {
   let currentDelay = initialDelay;
 
   for (let i = 0; i < amount; i++) {
